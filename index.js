@@ -16,10 +16,10 @@ async function startServer() {
   const db = await connectDB();
 
   // Initialize Dbs
+  await CategoryModel.init(db);
   await ProductModel.init(db);
   await InventoryModel.init(db);
   await SaleModel.init(db);
-  await CategoryModel.init(db);
   await InventoryHistoryModel.init(db);
 
   // Initialize Routes

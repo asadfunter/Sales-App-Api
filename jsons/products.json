@@ -1,0 +1,314 @@
+[{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307118"
+  },
+  "product_id": "P1000",
+  "product_name": "Sample Product",
+  "category_id": 1,
+  "price_per_unit": 29.99,
+  "updated_at": {
+    "$date": "2025-05-28T16:52:53.627Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307119"
+  },
+  "product_id": "P1001",
+  "product_name": "Product B1",
+  "category_id": 2,
+  "price_per_unit": 329.6
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711a"
+  },
+  "product_id": "P1002",
+  "product_name": "Product C2",
+  "category_id": 3,
+  "price_per_unit": 67.82
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711b"
+  },
+  "product_id": "P1003",
+  "product_name": "Product D3",
+  "category_id": 4,
+  "price_per_unit": 155.15
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711c"
+  },
+  "product_id": "P1004",
+  "product_name": "Product E4",
+  "category_id": 5,
+  "price_per_unit": 484.66
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711d"
+  },
+  "product_id": "P1005",
+  "product_name": "Product F5",
+  "category_id": 5,
+  "price_per_unit": 401.06
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711e"
+  },
+  "product_id": "P1006",
+  "product_name": "Product G6",
+  "category_id": 4,
+  "price_per_unit": 104.05
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030711f"
+  },
+  "product_id": "P1007",
+  "product_name": "Product H7",
+  "category_id": 3,
+  "price_per_unit": 122.35
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307120"
+  },
+  "product_id": "P1008",
+  "product_name": "Product I8",
+  "category_id": 2,
+  "price_per_unit": 56.13
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307121"
+  },
+  "product_id": "P1009",
+  "product_name": "Product J9",
+  "category_id": 1,
+  "price_per_unit": 461.2
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307122"
+  },
+  "product_id": "P1010",
+  "product_name": "Product K10",
+  "category_id": 4,
+  "price_per_unit": 107.24
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307123"
+  },
+  "product_id": "P1011",
+  "product_name": "Product L11",
+  "category_id": 5,
+  "price_per_unit": 359.35
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307124"
+  },
+  "product_id": "P1012",
+  "product_name": "Product M12",
+  "category_id": 6,
+  "price_per_unit": 389.27
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307125"
+  },
+  "product_id": "P1013",
+  "product_name": "Product N13",
+  "category_id": 6,
+  "price_per_unit": 293.2
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307126"
+  },
+  "product_id": "P1014",
+  "product_name": "Product O14",
+  "category_id": 3,
+  "price_per_unit": 87.85
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307127"
+  },
+  "product_id": "P1015",
+  "product_name": "Product P15",
+  "category_id": 3,
+  "price_per_unit": 448.83
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307128"
+  },
+  "product_id": "P1016",
+  "product_name": "Product Q16",
+  "category_id": 2,
+  "price_per_unit": 441.58
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307129"
+  },
+  "product_id": "P1017",
+  "product_name": "Product R17",
+  "category_id": 1,
+  "price_per_unit": 399.3
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712a"
+  },
+  "product_id": "P1018",
+  "product_name": "Product S18",
+  "category_id": 2,
+  "price_per_unit": 474.56
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712b"
+  },
+  "product_id": "P1019",
+  "product_name": "Product T19",
+  "category_id": 5,
+  "price_per_unit": 177.44
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712c"
+  },
+  "product_id": "P1020",
+  "product_name": "Product U20",
+  "category_id": 2,
+  "price_per_unit": 270.93
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712d"
+  },
+  "product_id": "P1021",
+  "product_name": "Product V21",
+  "category_id": 6,
+  "price_per_unit": 403
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712e"
+  },
+  "product_id": "P1022",
+  "product_name": "Product W22",
+  "category_id": 2,
+  "price_per_unit": 280.34
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a030712f"
+  },
+  "product_id": "P1023",
+  "product_name": "Product X23",
+  "category_id": 3,
+  "price_per_unit": 118.29
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307130"
+  },
+  "product_id": "P1024",
+  "product_name": "Product Y24",
+  "category_id": 4,
+  "price_per_unit": 437.6
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307131"
+  },
+  "product_id": "P1025",
+  "product_name": "Product Z25",
+  "category_id": 3,
+  "price_per_unit": 86.21
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307132"
+  },
+  "product_id": "P1026",
+  "product_name": "Product A26",
+  "category_id": 4,
+  "price_per_unit": 277.06
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307133"
+  },
+  "product_id": "P1027",
+  "product_name": "Product B27",
+  "category_id": 6,
+  "price_per_unit": 149.87
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307134"
+  },
+  "product_id": "P1028",
+  "product_name": "Product C28",
+  "category_id": 5,
+  "price_per_unit": 242.54
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307135"
+  },
+  "product_id": "P1029",
+  "product_name": "Product D29",
+  "category_id": 4,
+  "price_per_unit": 214.61
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307136"
+  },
+  "product_id": "P1030",
+  "product_name": "Product E30",
+  "category_id": 6,
+  "price_per_unit": 493.45
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307137"
+  },
+  "product_id": "P1031",
+  "product_name": "Product F31",
+  "category_id": 2,
+  "price_per_unit": 103.9
+},
+{
+  "_id": {
+    "$oid": "6836ab2ff77a72c6a0307138"
+  },
+  "product_id": "P1032",
+  "product_name": "Product G32",
+  "category_id": 6,
+  "price_per_unit": 289.63
+},
+{
+  "_id": {
+    "$oid": "68373f4a8058d20d29eff48a"
+  },
+  "product_name": "Sample Product",
+  "category_id": 1,
+  "price_per_unit": 29.99,
+  "product_id": "P202",
+  "created_at": {
+    "$date": "2025-05-28T16:52:26.956Z"
+  },
+  "updated_at": null,
+  "slug": "sample-product"
+}]

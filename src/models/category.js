@@ -16,25 +16,29 @@ const CategoryModel = {
                 console.log('error in Creating Collection');
             }
         }
+
+        if (categoryCollection && !await categoryCollection.findOne()) {
+            CategoryModel.seedData()
+        }
     },
 
-    getAll: async(filter) => {
+    getAll: async (filter) => {
 
-        filter.deleted_at = {$exists: false};
+        filter.deleted_at = { $exists: false };
 
         return await categoryCollection.find(filter).toArray();
     },
 
-    getById: async(id) => {
+    getById: async (id) => {
 
-        let filter = { _id: id};
+        let filter = { _id: id };
 
         return await categoryCollection.findOne(filter);
     },
-    deleteById: async(id) => {
+    deleteById: async (id) => {
         return await categoryCollection.updateOne({ _id: id }, { $set: { deleted_at: new Date() } });
     },
-    updateById:async(id, product) => {
+    updateById: async (id, product) => {
 
         product.updated_at = new Date();
         let result = await categoryCollection.updateOne({ _id: id }, { $set: product });
@@ -46,14 +50,43 @@ const CategoryModel = {
         return await categoryCollection.findOne({ _id: id });
     },
 
-    add: async(product) => {
+    add: async (product) => {
 
         product.created_at = new Date();
         product.updated_at = null;
         product.slug = product.name.toLowerCase().replace(/ /g, '-');
         let _id = await categoryCollection.insertOne(product);
-        
+
         return await categoryCollection.findOne({ _id: _id.insertedId })
+    },
+
+    seedData: async () => {
+
+        await categoryCollection.insertMany([{
+            "_id": 1,
+            "category_name": "Groceries"
+        },
+        {
+            "_id": 2,
+            "category_name": "Toys"
+        },
+        {
+            "_id": 3,
+            "category_name": "Clothing"
+        },
+        {
+            "_id": 4,
+            "category_name": "Electronics"
+        },
+        {
+            "_id": 5,
+            "category_name": "Home Appliances"
+        },
+        {
+            "_id": 6,
+            "category_name": "Books"
+        }])
+
     }
 
 }

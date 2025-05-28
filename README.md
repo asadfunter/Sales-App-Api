@@ -57,25 +57,36 @@ The server will start on `http://localhost:3000`.
 
 ---
 
+
+### Data Seeding
+
+The data will automatically will be seeded once the project is started.
+
 ## 📌 API Endpoints
 
 Here’s a brief explanation of the available RESTful endpoints:
 
-### 👤 User Routes
+### 📦 Product Routes
 
-- `POST /api/users/register` – Register a new user.
-- `POST /api/users/login` – Login an existing user.
-- `GET /api/users/:id` – Get user details by ID.
+- `GET /api/product` – Get a list of products.
+- `POST /api/product` – Create a new product.
+- `GET /api/product/:id` – Get product details by ID.
+- `PUT /api/product/:id` – Update product by ID.
+- `DELETE /api/product/:id` – Delete product by ID.
 
-### 📦 Product Routes (example)
 
-- `GET /api/products` – Get a list of products.
-- `POST /api/products` – Create a new product.
-- `GET /api/products/:id` – Get product details by ID.
-- `PUT /api/products/:id` – Update product by ID.
-- `DELETE /api/products/:id` – Delete product by ID.
+### 📦 Sales Routes
 
-> *(Add more endpoints as per your project specifics)*
+- `GET /api/sales` – Get a list of sales.
+- `GET /api/sales-revenue` – Get Sales Revenue By Period example : daily, monthly, weekly, yearly.
+- `GET /api/sales-revenue-by-period` – Compare Sales Revenue between given periods.
+- `GET /api/sales-revenue-by-category` – Compare Sales Revenue between given categories.
+
+
+### 📦 Inventory Routes
+
+- `GET /api/inventory` – Get a list of inventory with lowStock flag to get inventory with lower stocks.
+- `PUT /inventory/add-stock/:id` – Add quantity to inventory of specific product.
 
 ---
 

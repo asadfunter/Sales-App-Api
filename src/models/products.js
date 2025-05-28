@@ -1,3 +1,6 @@
+const { ObjectId } = require("mongodb");
+const fs = require("fs");
+
 let productsCollection;
 
 const ProductModel = {
@@ -16,26 +19,29 @@ const ProductModel = {
                 console.log('error in Creating Collection');
             }
         }
+        if (productsCollection && !await productsCollection.findOne()) {
+            ProductModel.seedData()
+        }
     },
 
-    getAll: async(filter) => {
+    getAll: async (filter) => {
 
-        filter.deleted_at = {$exists: false};
+        filter.deleted_at = { $exists: false };
 
         return await productsCollection.find(filter).toArray();
     },
 
-    getByFilter: async(filter) => {
+    getByFilter: async (filter) => {
 
-        filter.deleted_at =  { $exists: false }
+        filter.deleted_at = { $exists: false }
 
         return await productsCollection.findOne(filter);
     },
-    
-    deleteById: async(id) => {
+
+    deleteById: async (id) => {
         return await productsCollection.updateOne({ _id: id }, { $set: { deleted_at: new Date() } });
     },
-    updateById:async(id, product) => {
+    updateById: async (id, product) => {
 
         product.updated_at = new Date();
         let result = await productsCollection.updateOne({ _id: id }, { $set: product });
@@ -47,14 +53,31 @@ const ProductModel = {
         return await productsCollection.findOne({ _id: id });
     },
 
-    add: async(product) => {
+    add: async (product) => {
 
         product.created_at = new Date();
         product.updated_at = null;
         product.slug = product.product_name.toLowerCase().replace(/ /g, '-');
         let _id = await productsCollection.insertOne(product);
-        
+
         return await productsCollection.findOne({ _id: _id.insertedId })
+    },
+
+    seedData: async () => {
+
+        const products = fs.readFileSync("jsons/products.json", "utf8");
+        const products_json = JSON.parse(products);
+
+        products_json.forEach(product => {
+
+
+            product._id = new ObjectId(product._id.$oid)
+
+
+        });
+
+        await productsCollection.insertMany(products_json)
+
     }
 
 }
