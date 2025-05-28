@@ -42,7 +42,9 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/your-db-name
+MONGO_URI=mongodb://localhost:27017
+DB_NAME=db_name
+
 ```
 
 ### ▶️ Start the Server
